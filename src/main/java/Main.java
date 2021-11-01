@@ -1,18 +1,18 @@
+import decorator.BasketDecorator;
+import decorator.ItemDecorator;
+import decorator.PaperDecorator;
+import decorator.RibbonDecorator;
+import flowers.Flower;
+import flowers.FlowerType;
+import flowers.Item;
+
 public class Main {
     public static void main(String[] args) {
-        int[] color = {127, 0 , 0};
+        Item flower = new Flower(FlowerType.TULIP);
+        flower.setPrice(10);
+        flower = new ItemDecorator(flower);
+        System.out.println(flower.getPrice());
+        System.out.println(flower.getDescription());
 
-//        Flower[] flowers = new Flower[3];
-//        for (int i = 0; i < flowers.length; i++) {
-//            flowers[i] = new Flower();
-//            flowers[i].setColor(color);
-//            System.out.println(flowers[i]);
-//        }
-//
-//        color[1] = 127;
-//
-//        for (int i = 0; i < flowers.length; i++) {
-//            System.out.println(flowers[i]);
-//        }
     }
 }

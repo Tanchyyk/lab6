@@ -1,3 +1,6 @@
+import flowers.Flower;
+import flowers.FlowerPack;
+import flowers.FlowerType;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

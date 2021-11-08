@@ -18,8 +18,4 @@ class SenderTest {
         assertEquals(sender.getStatus(), "new status");
     }
 
-    @Test
-    void getId() {
-        assertEquals(sender.getId(), "0");
-    }
 }

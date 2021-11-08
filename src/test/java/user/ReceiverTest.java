@@ -18,9 +18,4 @@ class ReceiverTest {
     void getStatus() {
         assertEquals(receiver.getStatus(), "new status");
     }
-
-    @Test
-    void getId() {
-        assertEquals(receiver.getId(), "0");
-    }
 }
